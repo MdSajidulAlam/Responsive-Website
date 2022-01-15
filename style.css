@@ -40,6 +40,17 @@ nav{
     text-decoration: none;
 
 }
+/*---------- 
+Nav-bar 
+------------*/
+#nav-toggler{
+    display: none;
+}
+.nav-toggler-icon{
+    display: none;
+    color: #3A3A3A;
+    font-size: 30px;
+}
 /*-------------- 
 Banner Style 
 ----------------*/
@@ -85,6 +96,7 @@ Banner Style
 .banner-right{
     background-image: url(./images/Circle\ design.svg);
     background-repeat: no-repeat;
+   
 }
 .banner-right img{
     width: 475px;
@@ -96,12 +108,17 @@ Logo Style
 ---------------*/
 .logo{
     display: flex;
+    height: 250px;
     justify-content: center;
     align-items: center;
-    height: 250px;
+    margin-top: 50px;
+    border-top: thin;
+    
     }
 .logo img{
-    margin-left: 60px;
+    margin:20px 0 20px 60px;
+    
+    
 }
 /*-------------- 
 Product Style 
@@ -151,6 +168,10 @@ Product Style
 .fa-star.filled{
     color: #FFC014;
 }
+#half-filled{
+    color: #FFC014;
+    font-size: 12px;
+}
 .fa-star.empty{
     color: #AEAEAE;
 }
@@ -178,6 +199,7 @@ Marketing Style
 
 .marketing-section{
     display: flex;
+    margin-top: 50px;
 }
 .marketing-section img{
     width: 475px;
@@ -245,6 +267,7 @@ footer small{
     
 }
 .social-links a{
+    text-decoration: none;
     margin: 0 16px;
     background-color: #727181;
     border-radius: 50%;
@@ -266,9 +289,68 @@ footer small{
 /*------------------------------ 
 Responsive For Mobile Device 
 --------------------------------*/
+@media only screen and(max-width:688px){
+    .navigation{
+        display: hidden;
+    }
+    .banner{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+       justify-content: center;
+    
+}
+
+/* -------------------
+Responsive for IPAD 
+-----------------------*/
 
 
-
+@media only screen and (max-width:992px){
+    .heading-title{
+        margin-left: 250px;
+        font-size: 20px;
+    }
+    .navigation{
+        display: none;
+    }
+    .banner{
+        width: 90%;
+        display: block;
+        margin-top: 40px;
+    }
+    .banner-right{
+        margin-top: 100px;
+    }
+    .logo{
+        display: grid;
+        width: 100%;
+        margin: auto;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+        margin-top: 60px;
+    }
+    .products{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-left: 45px;
+    }
+    .product-button{
+        margin-left: 50px;
+        justify-content: flex-start;
+    }
+    .marketing-section{
+        width: 500px;
+        margin-left: 50px;
+        margin-bottom: 50px;
+    }
+    footer{
+        
+        width: 930px;
+        margin: auto;
+        padding-top: 50px;
+    }
+}
 
 
       
